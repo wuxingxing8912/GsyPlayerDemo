@@ -6,6 +6,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.ln.mylibrary.TestApi;
 import com.shuyu.gsyvideoplayer.player.IjkPlayerManager;
 import com.shuyu.gsyvideoplayer.player.PlayerFactory;
 
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        int calc = TestApi.calc(1, 2);
+        Log.d(TAG, "calc: "+calc);
 
         //ijk内核，默认模式
         PlayerFactory.setPlayManager(IjkPlayerManager.class);

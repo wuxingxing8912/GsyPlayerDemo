@@ -10,3 +10,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GsyPlayerDemo"
 include ':app'
+include ':mylibrary'
